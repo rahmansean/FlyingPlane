@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Plane</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <style>   
+     body
+     {
+        margin: 0;
+     }
+    </style>
+</head>
+<body>
+    <div class="world" id="world"></div>
+    <script src="js/three.min.js"></script>
+    <script src="js/flyinggame.js"></script>
+    <div class="game-holder" id="gameHolder">
+        <div class="score" id="score">
+            <div class="score__content" id="level">
+                <div class="score__label">level</div>
+                <div class="score__value" id="levelValue">1</div>
+                <svg class="level-circle" id="levelCircle" viewbox="0 0 250 250">
+                    <circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790" stroke-width="24px" />
+                    <circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
+                </svg>
+                </div>
+            <div class="score__content" id="dist">
+                <div class="score__label">distance</div>
+                <div class="score__value" id="distValue">000</div>
+            </div>
+            <div class="score__content" id="lifes">
+				<div class="score__label">life</div>
+				<img class="heart" src="images/hear.png"/>
+				<img class="heart" src="images/hear.png"/>
+				<img class="heart" src="images/hear.png"/>
+			</div>
+            <div class="gameover" id="gameOverScreen">
+                <div class="gameover-content">
+                    <div class="gameover-text">Game Over!</div>
+                    <div class="gameover-text">Your Score:</div>
+                    <div class="gameover-text" id="gameoverdistValue">000</div>
+                    <div class="click">Click to Play Again</div>
+                </div>
+            </div>
+        </div>  
+         
+    </div>
+</body>
+</html>

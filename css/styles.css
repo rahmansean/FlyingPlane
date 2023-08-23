@@ -1,0 +1,98 @@
+.world {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	background: linear-gradient(#144066, #c7c9ea);
+	
+}
+.game-holder {
+	position: absolute;
+	height: 100%;
+    width: 10%;
+}
+.score {
+	width: 100%;
+	margin: 2em 0 0;
+	text-align: center;
+	white-space: nowrap;
+}
+.score__content {
+	position: relative;
+	display: inline-block;
+	padding: 0 1em;
+	vertical-align: top;
+}
+.score__content:nth-child(2) {
+	border-right: 1px solid #d1b790;
+	border-left: 1px solid #d1b790;
+}
+.level-circle {
+	position: absolute;
+	left: 50%;
+	width: 46px;
+	margin: -40px 0 0 -20px;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.score__label {
+	font-size: 15px;
+	position: relative;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #d1b790;
+}
+
+.score__value {
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	color: #d1b790;
+	font-size: 25px;
+}
+
+#lifes .heart {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 7px;
+	opacity: 0.7;
+}
+
+#lifes .heart img {
+	width: 100%;
+	height: 100%;
+}
+
+.gameover {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* At start to keep it hidden */
+}
+.gameover-content {
+    text-align: center;
+    color: white;
+}
+.gameover-text {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.click{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+

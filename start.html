@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link rel="stylesheet" type="text/css" href="css/start.css" />
+    <style>   
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Flying Plane</h1>
+    </div>
+    <div class="center-container">
+        <img src="images/aircraft_img.jpg" alt="Flying in the sky">
+        <button id="startButton">Let's Fly</button>
+        <script>
+            document.getElementById('startButton').addEventListener('click', function() {
+               
+                window.location.href = 'index.html';
+            });
+        </script>
+    </div>
+    <script src="js/three.min.js"></script>
+    <script src="js/start.js"></script>
+</div>
+<div class="message" id="instructions">
+    <h3>Grab the potions.</h3> 
+    <h3>Avoid the obstacles.</h3> </div>
+
+</body>
+</html>
